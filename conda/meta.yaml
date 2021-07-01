@@ -1,0 +1,30 @@
+package:
+  name: "netdipatch"
+  version: "0.0.8"
+
+source:
+  git_rev: v0.0.8
+  git_url: https://github.com/GiulioRossetti/netdispatch
+
+requirements:
+  host:
+    - python
+    - setuptools
+  build:
+    - python
+    - setuptools
+  run:
+    - python>=3.8
+    - python-igraph
+    - networkx>=2.4
+
+about:
+  home: https://github.com/GiulioRossetti/netdispatch
+  license: BSD-2-Clause
+  license_familY: BSD
+  license_file: LICENSE
+  summary: "networkx-igrpah wrapper"
+
+extra:
+  recipe-maintainers:
+    - GiulioRossetti

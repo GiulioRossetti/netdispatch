@@ -1,0 +1,5 @@
+name: netdipatch
+dependencies:
+- python>=3.8
+- python-igraph
+- networkx>=2.4

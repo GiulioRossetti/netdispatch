@@ -1,20 +1,22 @@
 from setuptools import setup, find_packages
-# from codecs import open
-# from os import path
+from codecs import open
+from os import path
 
 __author__ = 'Giulio Rossetti'
 __license__ = "BSD-2-Clause"
 __email__ = "giulio.rossetti@gmail.com"
 
-# here = path.abspath(path.dirname(__file__))
+here = path.abspath(path.dirname(__file__))
 
-# Get the long description from the README file
-# with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-#    long_description = f.read()
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
+    requirements = f.read().splitlines()
 
 
 setup(name='netdispatch',
-      version='0.0.7',
+      version='0.0.8',
       license='BSD-Clause-2',
       description='Network Dispatcher',
       url='https://github.com/GiulioRossetti/netdispatch',
@@ -42,9 +44,8 @@ setup(name='netdispatch',
           'Programming Language :: Python :: 3'
       ],
       keywords='complex-networks',
-      install_requires=['networkx',  ''],
-      extras_require={
-          'C':  ["python-igraph"],
-      },
+      install_requires=requirements,
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       packages=find_packages(exclude=["*.test", "*.test.*", "test.*", "test", "netdispatch.test", "netdispatch.test.*"]),
       )
