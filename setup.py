@@ -16,7 +16,7 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
 
 
 setup(name='netdispatch',
-      version='0.0.8',
+      version='0.0.9',
       license='BSD-Clause-2',
       description='Network Dispatcher',
       url='https://github.com/GiulioRossetti/netdispatch',
