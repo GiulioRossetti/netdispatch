@@ -1,9 +1,9 @@
 package:
   name: "netdipatch"
-  version: "0.0.9"
+  version: "0.1.0"
 
 source:
-  git_rev: v0.0.9
+  git_rev: v0.1.0
   git_url: https://github.com/GiulioRossetti/netdispatch
 
 requirements:
